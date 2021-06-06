@@ -1,0 +1,354 @@
+@import url("https://fonts.googleapis.com/css2?family=Revalia&family=Roboto&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  max-width: 1920px;
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+}
+section > .container {
+  width: 1100px;
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+h2 {
+  font-size: 32px;
+  line-height: 36px;
+  margin-bottom: 40px;
+  color: #000;
+}
+
+/* Первое окно */
+/* шапка */
+#first-screen {
+  background: #eeeff1;
+  min-height: 700px;
+}
+#first-screen header {
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#first-screen header .wd {
+  width: 96px;
+  font: 48px/59.52px "Revalia", cursive;
+  text-align: center;
+  color: #34547a;
+}
+#first-screen__menu {
+  width: 611px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  font-weight: 400;
+}
+#first-screen__menu .checked {
+  color: #34547a;
+  font-weight: 600;
+}
+/* контент */
+#first-screen td {
+  width: 50%;
+  height: 605px;
+}
+#first-screen td img {
+  position: relative;
+  left: 150px;
+}
+#first-screen td p {
+  font-size: 48px;
+  line-height: 79px;
+  font-weight: 500;
+  margin-bottom: 50px;
+}
+#first-screen td p:last-of-type {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+}
+#first-screen td p:last-of-type {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+}
+#first-screen td a div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 225px;
+  height: 65px;
+  background: #34547a;
+  color: #fff;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+}
+/* Второе окно */
+#about-me {
+  min-height: 360px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+#about-me > * {
+  max-width: 540px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #727272;
+}
+
+/* Третье окно */
+#numbers {
+  min-height: 250px;
+  background: #34547a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#numbers .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#numbers .container > div {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 16px;
+  line-height: 26px;
+}
+#numbers .container p {
+  margin-left: 20px;
+}
+#numbers .container p::first-line {
+  font-size: 21px;
+  font-weight: 600;
+}
+
+/* Четвертое окно */
+#skills {
+  min-height: 653px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  line-height: 26px;
+  color: #727272;
+}
+#skills .container {
+  display: flex;
+  justify-content: center;
+}
+#skills .container > div {
+  width: 555px;
+  height: 450px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+
+#skills progress {
+  margin-bottom: 20px;
+  width: 80%;
+}
+
+/* Пятое окно */
+#video {
+  min-height: 1005px;
+  background: #eeeff1;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px;
+  font-size: 32px;
+  line-height: 36px;
+  color: #000;
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+#video .video__title {
+  height: 150px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+#video p {
+  max-width: 540px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 26px;
+  color: #727272;
+}
+#video .video-container {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+}
+.video-aside {
+  display: block;
+  position: absolute;
+  transform: scale(0.5);
+  transition-duration: 0.5s;
+}
+.video-aside-left {
+  left: -600px;
+}
+.video-aside-right {
+  left: 1200px;
+}
+.video-aside-right:hover,
+.video-aside-left:hover {
+  transform: scale(0.6);
+}
+.video {
+  width: 1110px;
+  height: 600px;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.video > div {
+  width: 100px;
+  height: 100px;
+  background: #fff;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.video > div > div {
+  width: 0;
+  height: 0;
+  border: 20px solid transparent;
+  border-left: 40px solid #000;
+  position: relative;
+  left: 15px;
+}
+/* Шестое окно */
+#projects {
+  min-height: none;
+  display: flex;
+  flex-flow: row wrap;
+}
+#projects > div {
+  display: flex;
+  flex-flow: row nowrap;
+}
+#projects > div > div {
+  width: 480px;
+  height: 480px;
+  background: #789;
+}
+#projects > div > div:nth-child(3n + 1) {
+  background: #567;
+}
+#projects > div > div:nth-child(3n) {
+  background: #678;
+}
+#projects .hovered {
+  opacity: 0;
+  background: #fff;
+  height: 480px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#projects > div > div:hover > .hovered {
+  opacity: 0.2;
+}
+
+/* Седьмое окно */
+#clients {
+  min-height: 290px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#clients img {
+  margin: 0 30px;
+}
+/* Восьмое окно */
+#form {
+  font-size: 16px;
+  color: #727272;
+  text-align: center;
+  background: #eeeff1;
+  padding-top: 100px;
+}
+
+/*параграф*/
+#form > p {
+  width: 540px;
+  margin: 0 auto 65px auto;
+}
+/*форма*/
+#form > form {
+  width: 540px;
+  margin: 0 auto 100px auto;
+  padding-bottom: 80px;
+}
+/*все инпуты*/
+#form > form input {
+  border: none;
+  padding: 10px 5px 10px 20px;
+}
+#form > form > input:first-child,
+#form > form > input:nth-child(2) {
+  width: 255px;
+  margin-bottom: 20px;
+}
+#form > form > input:first-child {
+  margin-right: 26px;
+}
+#form > form > input[placeholder="Сообщение"] {
+  width: 540px;
+  height: 175px;
+  margin-bottom: 50px;
+}
+#form > form > button {
+  border: none;
+  width: 190px;
+  height: 55px;
+  background: #34547a;
+  color: #fff;
+}
+
+/* Девятое окно */
+#footer {
+  min-height: 151px;
+  background: #34547a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 21px;
+  color: #fff;
+  line-height: 21.61px;
+}
+#footer .container p {
+  font-size: 13px;
+  margin-top: 20px;
+}
